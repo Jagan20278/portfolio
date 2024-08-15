@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome, I am Jagan mohan rao</h1>
+        <p>Hi all.</p>
+        <button class="download-resume">Download Resume</button>
+        <div class="photo-box">
+            <img src="my logo.jpg.jpg" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jagan Portfolio</p>
+    </footer>
+
+    <!-- Add a hidden link to the resume file -->
+    <a href="resume.pdf" download="My Resume.pdf" id="resume-link"></a>
+    
+    
+
+    <script>
+        // Add an event listener to the download button
+        document.querySelector('.download-resume').addEventListener('click', function() {
+            // Simulate a click on the hidden link to download the resume
+            document.querySelector('#resume-link').click();
+        });
+    </script>
+</body>
+</html>
